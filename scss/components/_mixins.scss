@@ -1,0 +1,18 @@
+//Gradients Mixins
+@mixin gradients {
+  background: linear-gradient(
+    to right,
+    rgba($primary, 0.95),
+    rgba($secondary, 0.95)
+  );
+}
+@mixin centerAbs {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@mixin  transition {
+  transition-duration: .8s;
+  transition-property: all;
+}

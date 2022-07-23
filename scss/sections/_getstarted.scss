@@ -1,0 +1,40 @@
+.getstarted {
+  padding: 4rem 0;
+  background-color: $gray-200;
+}
+.cta-info {
+  @include media-breakpoint-down(sm) {
+    padding: 1rem;
+  }
+  padding: 3rem;
+  margin: 1rem 0;
+  p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    @include media-breakpoint-down(sm) {
+      font-size: 1rem;
+    }
+  }
+  .question {
+    font-size: 1.8rem;
+  }
+}
+.form {
+  @include media-breakpoint-down(sm) {
+    padding: 1rem;
+  }
+  .display-3--title {
+    font-size: 2.6rem;
+    font-weight: 700;
+  }
+  ::placeholder {
+    @include media-breakpoint-down(sm) {
+      font-size: 1rem;
+    }
+  }
+
+  padding: 3rem;
+  button {
+    border: none;
+  }
+}

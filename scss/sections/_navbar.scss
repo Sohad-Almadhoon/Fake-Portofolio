@@ -1,0 +1,13 @@
+.menu {
+  @include gradients;
+  .navbar-nav{
+    .nav-item{
+        padding: 0 .7rem;
+        a{
+            color: #fff;
+            text-transform: capitalize;
+            font-weight: 600;
+        }
+    }
+  }
+}

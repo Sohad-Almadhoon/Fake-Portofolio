@@ -1,0 +1,99 @@
+@import "../components/mixins";
+.footer {
+  padding-top: 1rem;
+  background-color: $footer;
+}
+.contact-box {
+  position: relative;
+  &__info {
+    padding: 0.4rem;
+  }
+  &__icon {
+    font-size: 2.5rem;
+    padding-top: 0.4rem;
+    color: $primary;
+    @include media-breakpoint-down(sm) {
+      font-size: 1.8rem;
+    }
+  }
+  &__info--title {
+    color: $white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    @include media-breakpoint-down(sm) {
+      font-size: 1.3rem;
+    }
+  }
+  &__info--subtitle {
+    color: $gray-500;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}
+.footer-sm {
+  padding: 1rem 0;
+  .social {
+    @include media-breakpoint-down(sm) {
+      margin-top: 1rem;
+    }
+  }
+  a {
+    color: $white;
+    i {
+      font-size: 1.3rem;
+      padding: 0.4rem;
+      @include media-breakpoint-down(sm) {
+        font-size: 1.7rem;
+      }
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}
+.star {
+  li {
+    color: $gray-500;
+    font-weight: 500;
+    &:hover {
+      cursor: pointer;
+      color: $primary;
+    }
+  }
+}
+.company {
+  color: $gray-500;
+  @include media-breakpoint-down(sm) {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
+.footer-bottom {
+  &__copy-right {
+    color: $gray-600;
+    font-weight: 400;
+  }
+  a {
+    text-decoration: none;
+    color: $gray-300;
+    &:hover {
+      cursor: pointer;
+      color: $primary;
+    }
+  }
+}
+.back-to-top {
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  right: 1.875rem;
+  bottom: 1.875rem;
+  border-radius: 50%;
+  z-index: 9999;
+  background-color: $primary;
+  i {
+    color: $white;
+    font-size: 1.6rem;
+    @include centerAbs;
+  }
+}
